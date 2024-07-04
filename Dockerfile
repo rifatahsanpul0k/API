@@ -24,4 +24,4 @@ RUN adduser -D user
 USER user
 
 # Define the command to run the application
-CMD ["python", "app.py"]
+CMD ["sh", "-c", "python manage.py test && flake8"]
